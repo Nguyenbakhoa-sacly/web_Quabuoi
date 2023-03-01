@@ -1122,8 +1122,8 @@ list-style: none;
   line-height: 28px;
 }
 .footer-list-content-item-row-img img{
-  width: 100%;
-  height: 100%;
+  width: 200px;
+  height: 150px;
 }
 
 .scroll_top_button{
