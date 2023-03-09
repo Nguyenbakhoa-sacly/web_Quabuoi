@@ -550,6 +550,10 @@ list-style: none;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+
+}
+.content_trangchu{
+  display: none;
 }
 .container{
   max-width: 100%;
@@ -1213,3 +1217,133 @@ position: relative;
 /* .btn-transfer-right{
   margin-right:0.5px;
 } */
+
+
+
+/* conten_trang san pham */
+.product_indexing{
+  padding:15px 0;
+}
+.product_indexing_list{
+  list-style-type: none;
+  padding: 0;
+ 
+}
+.product_indexing_list a{ 
+   text-decoration: none;
+   color: #333;
+}
+.product_indexing_list li{
+    display: inline;
+
+}
+.product_indexing_list-item-home{
+  padding-right: 6px;
+
+}
+.product_indexing_list i{
+  padding-right: 6px;
+  font-size: 12px;
+  font-weight:600;
+  color: #9e9c9c;
+  
+}
+.content_trangsanpham-left{
+  width:25%;
+}
+.danhMuc{
+
+}
+.product_price-slideValue{
+  margin: 16px 26px;
+}
+.product_price-slideValue-input input{
+  align-items: center;
+  -webkit-appearance: none;
+  height: 3px;
+  width:100%;
+  background:var(--green-color);
+  border-radius:5px;
+  outline: none;
+
+
+}
+.product_price_slider{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 26px 20px 26px;
+  font-size:15px;
+}
+.product_price_slider-unit{
+  font-size:12px;
+}
+.product_price_slider-button button{
+  background-color: #f3f7fe;
+  color:var(--white-color);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin:0 0 20px 26px;
+
+  transition: 0.3s;
+  background-color: var(--green-color);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.product_price_slider-button button:hover {
+  box-shadow: 0 0 0 5px rgb(144, 254, 1);
+}
+.product_color-checkbox{
+  display: flex;
+  margin: 24px 0;
+
+}
+.product_color-checkbox .product_color-checkboxItem{
+ width: 20px;
+ height: 20px;
+ padding: 0px;
+ margin-left: 26px;
+cursor: pointer;
+
+}
+.product_color-checkbox .product_color-checkboxItem:hover{
+  border-radius: 50%;
+  border: 1px solid rgb(220, 220, 220);
+  
+}
+.product_color-checkboxItem .checkbox_list{
+display: none;
+}
+.product_color-checkbox .product_color-checkboxItem::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+
+}
+.product_color-checkbox .product_color-yellow::before{
+  background: yellow;
+
+}
+.product_color-checkbox .product_color-red::before{
+  background: red;
+
+}
+.product_color-checkbox .product_color-white::before{
+  background: rgb(249, 249, 249);
+
+}
+.product_color-checkbox .product_color-orange::before{
+  background: orange;
+
+}
+.product_color-checkbox .product_color-brown::before{
+  background: brown;
+
+}
+.product_color-checkbox .product_color-pink::before{
+  background: pink;
+
+}
