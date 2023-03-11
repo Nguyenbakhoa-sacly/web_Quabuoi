@@ -141,6 +141,7 @@ khi khong co san pham nao
 .scroll_bar::-webkit-scrollbar-thumb{
   background-color:var(--hurry-color);
 }
+
 .header__cart-list--no-cart-text{
     font-size: 14px;
     padding-left: 14px;
@@ -602,6 +603,7 @@ list-style: none;
 .nav__category-menu-item-icon{
   font-size: 14px;
   padding-right: 6px;
+  color: #5c5b5b;
 }
 .nav__category-menu-item-link{
   text-decoration: none;
@@ -1248,6 +1250,9 @@ position: relative;
   color: #9e9c9c;
   
 }
+.content_trangsanpham{
+  display: flex;
+}
 .content_trangsanpham-left{
   width:25%;
 }
@@ -1346,4 +1351,209 @@ display: none;
 .product_color-checkbox .product_color-pink::before{
   background: pink;
 
+}
+
+.product_choose_type-select{
+  margin: 10px 26px;
+}
+.product_choose_type-select-form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+/* styling of whole input container */
+.product_choose_type-select-form {
+  --timing: 0.3s;
+  --width-of-input: 100%;
+  --height-of-input: 40px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2f2ee9;
+  --border-radius: 30px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg,#fff);
+}
+/* styling of Input */
+.product_choose_type-select-input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.product_choose_type-select-form:before {
+  content: "";
+  position: absolute;
+  background: var(--green-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+/* Hover on Input */
+.product_choose_type-select-form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+.product_choose_type-select-input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+.product_choose_type-select-form:focus-within:before {
+  transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button shown when typing */
+.product_choose_type-select-input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+/* sizing svg icons */
+.product_choose_type-select-form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+
+
+.product_choose_type-checkbox{
+  margin: 16px 26px 10px 26px;
+}
+
+.scroll_bar_select{
+  height:300px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* margin-top: 15px; */
+}
+.scroll_bar_select::-webkit-scrollbar{
+  width: 6px;
+  background-color: #F5F5F5;
+}
+.scroll_bar_select::-webkit-scrollbar-thumb{
+  background-color:var(--green-color);
+}
+.product_choose_type_value{
+  display: flex;
+  margin-bottom: 14px;
+  height: 24px;
+}
+.product_choose_type_input{
+  appearance: none;
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+  border-radius: 5px;
+  color: #333;
+  cursor: pointer;
+  background-color:#dededd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.product_choose_type_input::after{
+  content: "\f00c";
+  font-weight: 900; 
+  font-size: 12px;
+  font-family: "Font Awesome 6 free";
+  color: white;
+  display: none;
+}
+.product_choose_type_input:hover{
+  background-color:#d7d9d7;
+
+}
+.product_choose_type_input:checked{
+  background-color:var(--green-color);
+
+}
+.product_choose_type_input:checked::after{
+  display: block;
+
+}
+.product_choose_type_value_checkmark{
+  padding:0;
+  height: 100%;
+  
+  cursor: pointer;
+  margin-left: 8px;
+}
+.product_choose_type_value_checkmark:hover{
+  color: var(--green-color);
+}
+/* san pham noi bat */
+
+.products_featured_list{
+  margin: 14px 20px 14px 20px;
+}
+
+.products_featured_list_item{
+  border-bottom: 1px solid #ebebeb;
+
+}
+.products_featured_list_item_children{
+  height:80px;
+  margin-bottom: 14px;
+  margin-top:14px;
+ 
+
+}
+.products_featured_list_item_img img{
+  width:100%;
+  height: 80px;
+  border: 1px solid #ebebeb;
+
+}
+.products_featured_list_item-text{
+  margin-left: 18px;
+}
+.products_featured_list_item-name a {
+  padding-top: 4px;
+  margin-bottom: 16px;
+  color:var(--text);
+  text-decoration: none;
+}
+.products_featured_list_item-name a p{
+  padding-top: 4px;
+  margin-bottom: 12px;
+  color:var(--text);
+
+}
+.products_featured_list_item-prepare{
+  color: var(--hurry-color);
+  font-size: 15px;
+}
+.products_featured_list_item-init{
+  color: var(--hurry-color);
+  font-size: 11px;
+
+}
+
+
+.content_trangsanpham-right{
+  width:75%;
+  background-color: var(--hurry-color);
+  height: 500px;
 }

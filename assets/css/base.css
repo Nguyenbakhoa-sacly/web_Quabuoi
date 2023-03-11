@@ -12,6 +12,7 @@
     --height-of-input:30px;
     --inline-padding-of-input: 1.2em;
     --gap: 0.9rem;
+    --text:#333;
 }
 *{
     box-sizing: inherit;
