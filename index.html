@@ -217,7 +217,7 @@
                 <div class="header__menu-hiddent">
                     <div class="header__hidden-list">
                         <ul class="menu_left">
-                            <li class="menu__left-item active">
+                            <li class="menu__left-item next_page">
                                 <a href="#" class="menu__link">Trang chủ 
                                     <i class="fa-solid fa-chevron-right menu__left-item-icon"></i>
                                 </a>
@@ -335,7 +335,7 @@
         <div class="content"> 
         <!-- Phan noi dung trang chu -->
 
-            <div class="content_trangchu">
+            <div class="content_trangchu  tab_page next_page">
                 <div class="container">
                     <div class="container-left">
                         <div class="nav__category-head">
@@ -2149,354 +2149,827 @@
                     </div>
             </div>
 
-            <div class="content_trangsanpham">
-                
-                <div class="content_trangsanpham-left">
-                    <div class=" product_indexing">
-                        <ul class=" product_indexing_list">
-                            <li class=" product_indexing_list-item-home">
-                                <a href="#">
-                                    <span>Trang Chủ</span>
-                                </a>
-                            </li>
-                            <i class="fa-solid fa-angle-right"></i>
-                            <li class=" text_greencolor">
-                                <span>Tất cả sản phẩm</span>
-                            </li>
-                        </ul>
-                    </div>
-                        <div class="danhMuc boder_nav_left">
-                            <div class="nav__category-head">
-                                <h2 class="nav__category-title">
-                                    <span>DANH MỤC</span>
-                                </h2>
-                            </div>
-                            <div class="nav__category-menu">
-                                <div class="nav__category-menu-content">
-                                    <ul class="nav__category-menu-list">
-                                        <li  class="nav__category-menu-item "> 
-                                            <i class="fa fa-arrow-circle-right nav__category-menu-item-icon "></i>
-                                            <a href="" class=" nav__category-menu-item-link ">Rau tươi sạch</a>
-                                        </li>
-                                        <li  class="nav__category-menu-item "> 
-                                            <i class="fa fa-arrow-circle-right nav__category-menu-item-icon "></i>
-                                            <a href="" class=" nav__category-menu-item-link ">Thịt tươi sạch</a>
-                                        </li>
-                                        <li  class="nav__category-menu-item "> 
-                                            <i class="fa fa-arrow-circle-right nav__category-menu-item-icon "></i>
-                                            <a href="" class=" nav__category-menu-item-link ">Hải sản tươi sống</a>
-                                        </li>
-                                        <li  class="nav__category-menu-item "> 
-                                            <i class="fa fa-arrow-circle-right nav__category-menu-item-icon "></i>
-                                            <a href="" class=" nav__category-menu-item-link ">Hải sản nhập khẩu</a>
-                                        </li>
-                                        <li  class="nav__category-menu-item "> 
-                                            <i class="fa fa-arrow-circle-right nav__category-menu-item-icon "></i>
-                                            <a href="" class=" nav__category-menu-item-link ">Trái cây miền nam</a>
-                                        </li>
-                                        <li  class="nav__category-menu-item "> 
-                                            <i class="fa fa-arrow-circle-right nav__category-menu-item-icon "></i>
-                                            <a href="" class=" nav__category-menu-item-link ">Hoa quả sạch</a>
-                                        </li>
-                                        
-                                    </ul>
-                                </div>
-                                
-                            </div>
+            <div class="content_trangsanpham  tab_page">
+                <div class="flex">
+                    <div class="content_trangsanpham-left">
+                        <div class=" product_indexing">
+                            <ul class=" product_indexing_list">
+                                <li class=" product_indexing_list-item-home">
+                                    <a href="#">
+                                        <span>Trang Chủ</span>
+                                    </a>
+                                </li>
+                                <i class="fa-solid fa-angle-right"></i>
+                                <li class=" text_greencolor">
+                                    <span>Tất cả sản phẩm</span>
+                                </li>
+                            </ul>
                         </div>
-
-                        <div class="product_price boder_nav_left margin_top">
-                            <div class="nav__category-head">
-                                <h2 class="nav__category-title">
-                                    <span>GIÁ SẢN PHẨM</span>
-                                </h2>
+                            <div class="danhMuc boder_nav_left">
+                                <div class="nav__category-head">
+                                    <h2 class="nav__category-title">
+                                        <span>DANH MỤC</span>
+                                    </h2>
+                                </div>
+                                <div class="nav__category-menu">
+                                    <div class="nav__category-menu-content">
+                                        <ul class="nav__category-menu-list">
+                                            <li  class="nav__category-menu-item "> 
+                                                <i class="fa fa-arrow-circle-right nav__category-menu-item-icon "></i>
+                                                <a href="" class=" nav__category-menu-item-link ">Rau tươi sạch</a>
+                                            </li>
+                                            <li  class="nav__category-menu-item "> 
+                                                <i class="fa fa-arrow-circle-right nav__category-menu-item-icon "></i>
+                                                <a href="" class=" nav__category-menu-item-link ">Thịt tươi sạch</a>
+                                            </li>
+                                            <li  class="nav__category-menu-item "> 
+                                                <i class="fa fa-arrow-circle-right nav__category-menu-item-icon "></i>
+                                                <a href="" class=" nav__category-menu-item-link ">Hải sản tươi sống</a>
+                                            </li>
+                                            <li  class="nav__category-menu-item "> 
+                                                <i class="fa fa-arrow-circle-right nav__category-menu-item-icon "></i>
+                                                <a href="" class=" nav__category-menu-item-link ">Hải sản nhập khẩu</a>
+                                            </li>
+                                            <li  class="nav__category-menu-item "> 
+                                                <i class="fa fa-arrow-circle-right nav__category-menu-item-icon "></i>
+                                                <a href="" class=" nav__category-menu-item-link ">Trái cây miền nam</a>
+                                            </li>
+                                            <li  class="nav__category-menu-item "> 
+                                                <i class="fa fa-arrow-circle-right nav__category-menu-item-icon "></i>
+                                                <a href="" class=" nav__category-menu-item-link ">Hoa quả sạch</a>
+                                            </li>
+                                            
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
                             </div>
-                            <div class="product_price-slideValue">
-                                <div class="product_price-slideValue-input">
-                                    <input type="range" min="0" max="200" value="100" step="1">
+    
+                            <div class="product_price boder_nav_left margin_top">
+                                <div class="nav__category-head">
+                                    <h2 class="nav__category-title">
+                                        <span>GIÁ SẢN PHẨM</span>
+                                    </h2>
+                                </div>
+                                <div class="product_price-slideValue">
+                                    <div class="product_price-slideValue-input">
+                                        <input type="range" min="0" max="200" value="100" step="1">
+                                    </div>
+        
+                                </div>
+                                <div class="product_price_slider">
+                                    <div class="product_price_slider_star flex">
+                                        <p class="product_price_slider_min">0</p>
+                                        <p class="product_price_slider-unit"><u>đ</u></p>
+                                    </div>
+                                    <div class="product_price_slider_stop flex">
+                                        <p class="product_price_slider_max">10,000,000</p>
+                                        <p class="product_price_slider-unit"><u>đ</u></p>
+                                    </div>
+    
+                                </div>
+                                <div class="product_price_slider-button">
+                                    <button>Lọc giá</button>
+                                </div>
+                            </div>
+    
+                            <div class="product_color boder_nav_left margin_top">
+                                <div class="nav__category-head">
+                                    <h2 class="nav__category-title">
+                                        <span>MÀU SẮC</span>
+                                    </h2>
+                                </div>
+                                <div class="product_color-checkbox">
+                                    <label for="" class="product_color-checkboxItem product_color-yellow">
+                                        <input type="checkbox"  name="" class="checkbox_list" >
+                                    </label>
+                                    <label for="" class="product_color-checkboxItem product_color-red">
+                                        <input type="checkbox"  name="" class="checkbox_list" >
+                                    </label>
+                                    <label for="" class="product_color-checkboxItem product_color-white">
+                                        <input type="checkbox"  name="" class="checkbox_list" >
+                                    </label>
+                                    <label for="" class="product_color-checkboxItem product_color-orange">
+                                        <input type="checkbox"  name="" class="checkbox_list" >
+                                    </label>
+                                    <label for="" class="product_color-checkboxItem product_color-brown">
+                                        <input type="checkbox"  name="" class="checkbox_list" >
+                                    </label>
+                                    <label for="" class="product_color-checkboxItem product_color-pink">
+                                        <input type="checkbox"  name="" class="checkbox_list" >
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="  boder_nav_left margin_top">
+                                <div class="nav__category-head">
+                                    <h2 class="nav__category-title">
+                                        <span>LOẠI</span>
+                                    </h2>
+                                </div>
+                                <div class="product_choose_type-select">
+                                    <form class="product_choose_type-select-form">
+                                        <button>
+                                            <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                                                <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </button>
+                                        <input class="product_choose_type-select-input" placeholder="Type your text" required="" type="text">
+                                        <button class="reset" type="reset">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                                            </svg>
+                                        </button>
+                                    </form>
                                 </div>
     
-                            </div>
-                            <div class="product_price_slider">
-                                <div class="product_price_slider_star flex">
-                                    <p class="product_price_slider_min">0</p>
-                                    <p class="product_price_slider-unit"><u>đ</u></p>
-                                </div>
-                                <div class="product_price_slider_stop flex">
-                                    <p class="product_price_slider_max">10,000,000</p>
-                                    <p class="product_price_slider-unit"><u>đ</u></p>
-                                </div>
-
-                            </div>
-                            <div class="product_price_slider-button">
-                                <button>Lọc giá</button>
-                            </div>
-                        </div>
-
-                        <div class="product_color boder_nav_left margin_top">
-                            <div class="nav__category-head">
-                                <h2 class="nav__category-title">
-                                    <span>MÀU SẮC</span>
-                                </h2>
-                            </div>
-                            <div class="product_color-checkbox">
-                                <label for="" class="product_color-checkboxItem product_color-yellow">
-                                    <input type="checkbox"  name="" class="checkbox_list" >
-                                </label>
-                                <label for="" class="product_color-checkboxItem product_color-red">
-                                    <input type="checkbox"  name="" class="checkbox_list" >
-                                </label>
-                                <label for="" class="product_color-checkboxItem product_color-white">
-                                    <input type="checkbox"  name="" class="checkbox_list" >
-                                </label>
-                                <label for="" class="product_color-checkboxItem product_color-orange">
-                                    <input type="checkbox"  name="" class="checkbox_list" >
-                                </label>
-                                <label for="" class="product_color-checkboxItem product_color-brown">
-                                    <input type="checkbox"  name="" class="checkbox_list" >
-                                </label>
-                                <label for="" class="product_color-checkboxItem product_color-pink">
-                                    <input type="checkbox"  name="" class="checkbox_list" >
-                                </label>
-                            </div>
-                        </div>
-                        <div class="  boder_nav_left margin_top">
-                            <div class="nav__category-head">
-                                <h2 class="nav__category-title">
-                                    <span>LOẠI</span>
-                                </h2>
-                            </div>
-                            <div class="product_choose_type-select">
-                                <form class="product_choose_type-select-form">
-                                    <button>
-                                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
-                                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                    </button>
-                                    <input class="product_choose_type-select-input" placeholder="Type your text" required="" type="text">
-                                    <button class="reset" type="reset">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                                        </svg>
-                                    </button>
-                                </form>
-                            </div>
-
-                            <div class="product_choose_type-checkbox">
-                                <div class="product_choose_type_value">
-                                    <input type="checkbox" name="" id="checkbox1" class="product_choose_type_input">
-                                    <label class="product_choose_type_value_checkmark" for="checkbox1">Hoa quả tươi</label>
-                                </div>
-                                <div class="product_choose_type_value">
-                                    <input type="checkbox" name="" id="checkbox2" class="product_choose_type_input">
-                                    <label class="product_choose_type_value_checkmark" for="checkbox2">Thực phẩm sạch</label>
-                                </div>
-                                <div class="product_choose_type_value">
-                                    <input type="checkbox" name="" id="checkbox3" class="product_choose_type_input">
-                                    <label class="product_choose_type_value_checkmark" for="checkbox3">Khác</label>
-                                </div>
-                                <div class="product_choose_type_value">
-                                    <input type="checkbox" name="" id="checkbox4" class="product_choose_type_input">
-                                    <label class="product_choose_type_value_checkmark" for="checkbox4">Cà chua</label>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class=" boder_nav_left margin_top ">
-                            <div class="nav__category-head">
-                                <h2 class="nav__category-title">
-                                    <span>THƯƠNG HIỆU</span>
-                                </h2>
-                            </div>
-                            <div class="product_choose_type-select">
-                                <form class="product_choose_type-select-form">
-                                    <button>
-                                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
-                                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                    </button>
-                                    <input class="product_choose_type-select-input" placeholder="Type your text" required="" type="text">
-                                    <button class="reset" type="reset">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                                        </svg>
-                                    </button>
-                                </form>
-                            </div>
-
-                            <div class="product_choose_type-checkbox scroll_bar_select">
-                                <div class="product_choose_type_value">
-                                    <input type="checkbox" name="" id="checkbox1" class="product_choose_type_input">
-                                    <label class="product_choose_type_value_checkmark" for="checkbox1">Hoa quả tươi</label>
-                                </div>
-                                <div class="product_choose_type_value">
-                                    <input type="checkbox" name="" id="checkbox2" class="product_choose_type_input">
-                                    <label class="product_choose_type_value_checkmark" for="checkbox2">Thực phẩm sạch</label>
-                                </div>
-                                <div class="product_choose_type_value">
-                                    <input type="checkbox" name="" id="checkbox3" class="product_choose_type_input">
-                                    <label class="product_choose_type_value_checkmark" for="checkbox3">Khác</label>
-                                </div>
-                                <div class="product_choose_type_value">
-                                    <input type="checkbox" name="" id="checkbox4" class="product_choose_type_input">
-                                    <label class="product_choose_type_value_checkmark" for="checkbox4">Cà chua</label>
-                                </div>
-                                <div class="product_choose_type_value">
-                                    <input type="checkbox" name="" id="checkbox5" class="product_choose_type_input">
-                                    <label class="product_choose_type_value_checkmark" for="checkbox5">Hoa quả tươi</label>
-                                </div>
-                                <div class="product_choose_type_value">
-                                    <input type="checkbox" name="" id="checkbox6" class="product_choose_type_input">
-                                    <label class="product_choose_type_value_checkmark" for="checkbox6">Thực phẩm sạch</label>
-                                </div>
-                                <div class="product_choose_type_value">
-                                    <input type="checkbox" name="" id="checkbox7" class="product_choose_type_input">
-                                    <label class="product_choose_type_value_checkmark" for="checkbox7">Khác</label>
-                                </div>
-                                <div class="product_choose_type_value">
-                                    <input type="checkbox" name="" id="checkbox8" class="product_choose_type_input">
-                                    <label class="product_choose_type_value_checkmark" for="checkbox8">Cà chua</label>
-                                </div>
-                                
-                                
-                            </div>
-                        </div>
-                        <div class="  boder_nav_left margin_top">
-                            <div class="nav__category-head">
-                                <h2 class="nav__category-title">
-                                    <span>KÍCH THƯỚC</span>
-                                </h2>
-                            </div>
-                            <div class="product_choose_type-select">
-                                <form class="product_choose_type-select-form">
-                                    <button>
-                                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
-                                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                    </button>
-                                    <input class="product_choose_type-select-input" placeholder="Type your text" required="" type="text">
-                                    <button class="reset" type="reset">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                                        </svg>
-                                    </button>
-                                </form>
-                            </div>
-
-                            <div class="product_choose_type-checkbox">
-                                <div class="product_choose_type_value">
-                                    <input type="checkbox" name="" id="checkbox9" class="product_choose_type_input">
-                                    <label class="product_choose_type_value_checkmark" for="checkbox9">Lớn</label>
-                                </div>
-                                <div class="product_choose_type_value">
-                                    <input type="checkbox" name="" id="checkbox10" class="product_choose_type_input">
-                                    <label class="product_choose_type_value_checkmark" for="checkbox10">Nhỏ</label>
-                                </div>
-                                <div class="product_choose_type_value">
-                                    <input type="checkbox" name="" id="checkbox11" class="product_choose_type_input">
-                                    <label class="product_choose_type_value_checkmark" for="checkbox11">Vừa</label>
-                                </div>
-                                
-                                
-                            </div>
-                        </div>
-                        <div class="  boder_nav_left margin_top">
-                            <div class="nav__category-head">
-                                <h2 class="nav__category-title">
-                                    <span>SẢN PHẨM NỔI BẬT</span>
-                                </h2>
-                            </div>
-                            <div class="products_featured_list scroll_bar_select" >
-
-                                <div class="products_featured_list_item ">
-                                    <div class="products_featured_list_item_children flex">
-                                        <a href="" class="products_featured_list_item_img">
-                                            <img src="https://product.hstatic.net/1000324420/product/upload_963fbe98fc324f47b37e38a3481c22e1_compact.jpg" alt=""> 
-                                        </a>
-                                        <div class="products_featured_list_item-text ">
-                                            <div class="products_featured_list_item-name ">
-                                                <a href="">
-
-                                                    <p >Chanh dây đỏ Úc </p>
-                                                </a> 
-                                                
-                                            </div>
-                                            <div class="flex ">
-                                                <span class="products_featured_list_item-prepare">20,000</span>
-                                                <span class="products_featured_list_item-init"><u>đ</u></span>
-                                            </div>
-                                        </div>
+                                <div class="product_choose_type-checkbox">
+                                    <div class="product_choose_type_value">
+                                        <input type="checkbox" name="" id="checkbox1" class="product_choose_type_input">
+                                        <label class="product_choose_type_value_checkmark" for="checkbox1">Hoa quả tươi</label>
+                                    </div>
+                                    <div class="product_choose_type_value">
+                                        <input type="checkbox" name="" id="checkbox2" class="product_choose_type_input">
+                                        <label class="product_choose_type_value_checkmark" for="checkbox2">Thực phẩm sạch</label>
+                                    </div>
+                                    <div class="product_choose_type_value">
+                                        <input type="checkbox" name="" id="checkbox3" class="product_choose_type_input">
+                                        <label class="product_choose_type_value_checkmark" for="checkbox3">Khác</label>
+                                    </div>
+                                    <div class="product_choose_type_value">
+                                        <input type="checkbox" name="" id="checkbox4" class="product_choose_type_input">
+                                        <label class="product_choose_type_value_checkmark" for="checkbox4">Cà chua</label>
                                     </div>
                                     
                                 </div>
-                                <div class="products_featured_list_item ">
-                                    <div class="products_featured_list_item_children flex">
-                                        <a href="" class="products_featured_list_item_img">
-                                            <img src="https://product.hstatic.net/1000324420/product/upload_247e10d109a54ac9ad10d23d0736d0b4_compact.jpg" alt=""> 
-                                        </a>
-                                        <div class="products_featured_list_item-text ">
-                                            <div class="products_featured_list_item-name ">
-                                              <a href="">
-
-                                                  <p >Dưa leo Đà Lạt </p>
-                                              </a> 
-                                            </div>
-                                            <div class="flex ">
-                                                <span class="products_featured_list_item-prepare">65,000</span>
-                                                <span class="products_featured_list_item-init"><u>đ</u></span>
-                                            </div>
-                                        </div>
+                            </div>
+                            <div class=" boder_nav_left margin_top ">
+                                <div class="nav__category-head">
+                                    <h2 class="nav__category-title">
+                                        <span>THƯƠNG HIỆU</span>
+                                    </h2>
+                                </div>
+                                <div class="product_choose_type-select">
+                                    <form class="product_choose_type-select-form">
+                                        <button>
+                                            <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                                                <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </button>
+                                        <input class="product_choose_type-select-input" placeholder="Type your text" required="" type="text">
+                                        <button class="reset" type="reset">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </div>
+    
+                                <div class="product_choose_type-checkbox scroll_bar_select">
+                                    <div class="product_choose_type_value">
+                                        <input type="checkbox" name="" id="checkbox1" class="product_choose_type_input">
+                                        <label class="product_choose_type_value_checkmark" for="checkbox1">Hoa quả tươi</label>
+                                    </div>
+                                    <div class="product_choose_type_value">
+                                        <input type="checkbox" name="" id="checkbox2" class="product_choose_type_input">
+                                        <label class="product_choose_type_value_checkmark" for="checkbox2">Thực phẩm sạch</label>
+                                    </div>
+                                    <div class="product_choose_type_value">
+                                        <input type="checkbox" name="" id="checkbox3" class="product_choose_type_input">
+                                        <label class="product_choose_type_value_checkmark" for="checkbox3">Khác</label>
+                                    </div>
+                                    <div class="product_choose_type_value">
+                                        <input type="checkbox" name="" id="checkbox4" class="product_choose_type_input">
+                                        <label class="product_choose_type_value_checkmark" for="checkbox4">Cà chua</label>
+                                    </div>
+                                    <div class="product_choose_type_value">
+                                        <input type="checkbox" name="" id="checkbox5" class="product_choose_type_input">
+                                        <label class="product_choose_type_value_checkmark" for="checkbox5">Hoa quả tươi</label>
+                                    </div>
+                                    <div class="product_choose_type_value">
+                                        <input type="checkbox" name="" id="checkbox6" class="product_choose_type_input">
+                                        <label class="product_choose_type_value_checkmark" for="checkbox6">Thực phẩm sạch</label>
+                                    </div>
+                                    <div class="product_choose_type_value">
+                                        <input type="checkbox" name="" id="checkbox7" class="product_choose_type_input">
+                                        <label class="product_choose_type_value_checkmark" for="checkbox7">Khác</label>
+                                    </div>
+                                    <div class="product_choose_type_value">
+                                        <input type="checkbox" name="" id="checkbox8" class="product_choose_type_input">
+                                        <label class="product_choose_type_value_checkmark" for="checkbox8">Cà chua</label>
                                     </div>
                                     
-                                </div>
-                                <div class="products_featured_list_item ">
-                                    <div class="products_featured_list_item_children flex">
-                                        <a href="" class="products_featured_list_item_img">
-                                            <img src="https://product.hstatic.net/1000324420/product/upload_2929d6cbc6a94b8f8b6cd1b158c426ad_compact.jpg" alt=""> 
-                                        </a>
-                                        <div class="products_featured_list_item-text ">
-                                            <div class="products_featured_list_item-name ">
-                                               <a href="">
-
-                                                   <p >Hành tây </p>
-                                               </a>
-                                            </div>
-                                            <div class="flex ">
-                                                <span class="products_featured_list_item-prepare">50,000</span>
-                                                <span class="products_featured_list_item-init"><u>đ</u></span>
-                                            </div>
-                                        </div>
-                                    </div>
                                     
                                 </div>
-                                <div class="products_featured_list_item ">
-                                    <div class="products_featured_list_item_children flex">
-                                        <a href="" class="products_featured_list_item_img">
-                                            <img src="https://product.hstatic.net/1000324420/product/upload_d07ae86f129b45c7b9828bc048ca9e00_compact.jpg" alt=""> 
-                                        </a>
-                                        <div class="products_featured_list_item-text ">
-                                            <div class="products_featured_list_item-name ">
-                                               <a href=""> 
-
-                                                   <p >Hồng đỏ Mỹ </p>
-                                               </a> 
-                                            </div>
-                                            <div class="flex ">
-                                                <span class="products_featured_list_item-prepare">150,000</span>
-                                                <span class="products_featured_list_item-init"><u>đ</u></span>
-                                            </div>
-                                        </div>
+                            </div>
+                            <div class="  boder_nav_left margin_top">
+                                <div class="nav__category-head">
+                                    <h2 class="nav__category-title">
+                                        <span>KÍCH THƯỚC</span>
+                                    </h2>
+                                </div>
+                                <div class="product_choose_type-select">
+                                    <form class="product_choose_type-select-form">
+                                        <button>
+                                            <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
+                                                <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg>
+                                        </button>
+                                        <input class="product_choose_type-select-input" placeholder="Type your text" required="" type="text">
+                                        <button class="reset" type="reset">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </div>
+    
+                                <div class="product_choose_type-checkbox">
+                                    <div class="product_choose_type_value">
+                                        <input type="checkbox" name="" id="checkbox9" class="product_choose_type_input">
+                                        <label class="product_choose_type_value_checkmark" for="checkbox9">Lớn</label>
+                                    </div>
+                                    <div class="product_choose_type_value">
+                                        <input type="checkbox" name="" id="checkbox10" class="product_choose_type_input">
+                                        <label class="product_choose_type_value_checkmark" for="checkbox10">Nhỏ</label>
+                                    </div>
+                                    <div class="product_choose_type_value">
+                                        <input type="checkbox" name="" id="checkbox11" class="product_choose_type_input">
+                                        <label class="product_choose_type_value_checkmark" for="checkbox11">Vừa</label>
                                     </div>
                                     
+                                    
+                                </div>
+                            </div>
+                            <div class="  boder_nav_left margin_top">
+                                <div class="nav__category-head">
+                                    <h2 class="nav__category-title">
+                                        <span>SẢN PHẨM NỔI BẬT</span>
+                                    </h2>
+                                </div>
+                                <div class="products_featured_list scroll_bar_select" >
+    
+                                    <div class="products_featured_list_item ">
+                                        <div class="products_featured_list_item_children flex">
+                                            <a href="" class="products_featured_list_item_img">
+                                                <img src="https://product.hstatic.net/1000324420/product/upload_963fbe98fc324f47b37e38a3481c22e1_compact.jpg" alt=""> 
+                                            </a>
+                                            <div class="products_featured_list_item-text ">
+                                                <div class="products_featured_list_item-name ">
+                                                    <a href="">
+    
+                                                        <p >Chanh dây đỏ Úc </p>
+                                                    </a> 
+                                                    
+                                                </div>
+                                                <div class="flex ">
+                                                    <span class="products_featured_list_item-prepare">20,000</span>
+                                                    <span class="products_featured_list_item-init"><u>đ</u></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="products_featured_list_item ">
+                                        <div class="products_featured_list_item_children flex">
+                                            <a href="" class="products_featured_list_item_img">
+                                                <img src="https://product.hstatic.net/1000324420/product/upload_247e10d109a54ac9ad10d23d0736d0b4_compact.jpg" alt=""> 
+                                            </a>
+                                            <div class="products_featured_list_item-text ">
+                                                <div class="products_featured_list_item-name ">
+                                                  <a href="">
+    
+                                                      <p >Dưa leo Đà Lạt </p>
+                                                  </a> 
+                                                </div>
+                                                <div class="flex ">
+                                                    <span class="products_featured_list_item-prepare">65,000</span>
+                                                    <span class="products_featured_list_item-init"><u>đ</u></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="products_featured_list_item ">
+                                        <div class="products_featured_list_item_children flex">
+                                            <a href="" class="products_featured_list_item_img">
+                                                <img src="https://product.hstatic.net/1000324420/product/upload_2929d6cbc6a94b8f8b6cd1b158c426ad_compact.jpg" alt=""> 
+                                            </a>
+                                            <div class="products_featured_list_item-text ">
+                                                <div class="products_featured_list_item-name ">
+                                                   <a href="">
+    
+                                                       <p >Hành tây </p>
+                                                   </a>
+                                                </div>
+                                                <div class="flex ">
+                                                    <span class="products_featured_list_item-prepare">50,000</span>
+                                                    <span class="products_featured_list_item-init"><u>đ</u></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="products_featured_list_item ">
+                                        <div class="products_featured_list_item_children flex">
+                                            <a href="" class="products_featured_list_item_img">
+                                                <img src="https://product.hstatic.net/1000324420/product/upload_d07ae86f129b45c7b9828bc048ca9e00_compact.jpg" alt=""> 
+                                            </a>
+                                            <div class="products_featured_list_item-text ">
+                                                <div class="products_featured_list_item-name ">
+                                                   <a href=""> 
+    
+                                                       <p >Hồng đỏ Mỹ </p>
+                                                   </a> 
+                                                </div>
+                                                <div class="flex ">
+                                                    <span class="products_featured_list_item-prepare">150,000</span>
+                                                    <span class="products_featured_list_item-init"><u>đ</u></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+    
+                                </div>
+                            </div>
+                    </div>
+    
+                    <div class="content_trangsanpham-right">
+                        <div class="content_trangsanpham-header">
+                            <div class="content_trangsanpham-header-text">
+
+                                <div class="content_trangsanpham-header-title">
+                                    <p>Tất cả sản phẩm</p>
+                                </div>
+                                <div class="flex content_trangsanpham-header-select-arrange">
+                                    <p>Sắp xếp:</p>
+                                    <div class="flex content_trangsanpham-header-select-list">
+                                        <p>Mặc định</p>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <!-- <div class="content_trangsanpham-select_menu"> -->
+                                        <ul class="content_trangsanpham-select_menu-list">
+                                            <li class="content_trangsanpham-select_menu-list-item">
+                                                Mặc định
+                                            </li>
+                                            <li class="content_trangsanpham-select_menu-list-item">
+                                                A
+                                                <i class="fa-solid fa-arrow-right-long"></i> 
+                                                Z
+                                            </li>
+                                            <li class="content_trangsanpham-select_menu-list-item">
+                                                Z 
+                                                <i class="fa-solid fa-arrow-right-long"></i>
+                                                A
+                                            </li>
+                                            <li class="content_trangsanpham-select_menu-list-item">
+                                                Giá tăng dần
+                                            </li>
+                                            <li class="content_trangsanpham-select_menu-list-item">
+                                                Giá giảm dần
+                                            </li>
+
+                                        </ul>
+                            <!-- </div> -->
+                                </div>
+                                
+                            </div>
+                            
+
+                        </div>
+                        <div class="">
+                            <div class="content_trangsanpham-product">
+                                <div class="container__select-box-list product-select-box-lv1 ">
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_963fbe98fc324f47b37e38a3481c22e1_medium.jpg" title="Chanh Dây đỏ Úc" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Chanh Dây đỏ Úc</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">400,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+        
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+        
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="https://product.hstatic.net/1000324420/product/upload_247e10d109a54ac9ad10d23d0736d0b4_medium.jpg" title="Dưa leo Đà Lạt" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Dưa leo Đà Lạt</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">65,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_2929d6cbc6a94b8f8b6cd1b158c426ad_medium.jpg" title="Hành tây" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Hành tây</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">50,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="container__select-box-list product-select-box-lv1 ">
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_963fbe98fc324f47b37e38a3481c22e1_medium.jpg" title="Chanh Dây đỏ Úc" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Chanh Dây đỏ Úc</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">400,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+        
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+        
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="https://product.hstatic.net/1000324420/product/upload_247e10d109a54ac9ad10d23d0736d0b4_medium.jpg" title="Dưa leo Đà Lạt" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Dưa leo Đà Lạt</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">65,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_2929d6cbc6a94b8f8b6cd1b158c426ad_medium.jpg" title="Hành tây" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Hành tây</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">50,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="container__select-box-list product-select-box-lv1 ">
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_963fbe98fc324f47b37e38a3481c22e1_medium.jpg" title="Chanh Dây đỏ Úc" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Chanh Dây đỏ Úc</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">400,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+        
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+        
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="https://product.hstatic.net/1000324420/product/upload_247e10d109a54ac9ad10d23d0736d0b4_medium.jpg" title="Dưa leo Đà Lạt" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Dưa leo Đà Lạt</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">65,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_2929d6cbc6a94b8f8b6cd1b158c426ad_medium.jpg" title="Hành tây" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Hành tây</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">50,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="container__select-box-list product-select-box-lv1 ">
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_963fbe98fc324f47b37e38a3481c22e1_medium.jpg" title="Chanh Dây đỏ Úc" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Chanh Dây đỏ Úc</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">400,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+        
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+        
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="https://product.hstatic.net/1000324420/product/upload_247e10d109a54ac9ad10d23d0736d0b4_medium.jpg" title="Dưa leo Đà Lạt" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Dưa leo Đà Lạt</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">65,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_2929d6cbc6a94b8f8b6cd1b158c426ad_medium.jpg" title="Hành tây" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Hành tây</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">50,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="container__select-box-list product-select-box-lv1 ">
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_963fbe98fc324f47b37e38a3481c22e1_medium.jpg" title="Chanh Dây đỏ Úc" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Chanh Dây đỏ Úc</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">400,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+        
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+        
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="https://product.hstatic.net/1000324420/product/upload_247e10d109a54ac9ad10d23d0736d0b4_medium.jpg" title="Dưa leo Đà Lạt" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Dưa leo Đà Lạt</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">65,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_2929d6cbc6a94b8f8b6cd1b158c426ad_medium.jpg" title="Hành tây" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Hành tây</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">50,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="container__select-box-list product-select-box-lv1 ">
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_963fbe98fc324f47b37e38a3481c22e1_medium.jpg" title="Chanh Dây đỏ Úc" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Chanh Dây đỏ Úc</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">400,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+        
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+        
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="https://product.hstatic.net/1000324420/product/upload_247e10d109a54ac9ad10d23d0736d0b4_medium.jpg" title="Dưa leo Đà Lạt" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Dưa leo Đà Lạt</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">65,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_2929d6cbc6a94b8f8b6cd1b158c426ad_medium.jpg" title="Hành tây" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Hành tây</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">50,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>  
+                                </div>
+                                <div class="container__select-box-list product-select-box-lv1 ">
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_963fbe98fc324f47b37e38a3481c22e1_medium.jpg" title="Chanh Dây đỏ Úc" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Chanh Dây đỏ Úc</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">400,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+        
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+        
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="https://product.hstatic.net/1000324420/product/upload_247e10d109a54ac9ad10d23d0736d0b4_medium.jpg" title="Dưa leo Đà Lạt" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Dưa leo Đà Lạt</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">65,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_2929d6cbc6a94b8f8b6cd1b158c426ad_medium.jpg" title="Hành tây" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Hành tây</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">50,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>  
                                 </div>
 
+                                <div class="container__select-box-list product-select-box-lv1 ">
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_963fbe98fc324f47b37e38a3481c22e1_medium.jpg" title="Chanh Dây đỏ Úc" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Chanh Dây đỏ Úc</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">400,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+        
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+        
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="https://product.hstatic.net/1000324420/product/upload_247e10d109a54ac9ad10d23d0736d0b4_medium.jpg" title="Dưa leo Đà Lạt" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Dưa leo Đà Lạt</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">65,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="container__select-box-list-item product-select_lv1">
+                                        <img  src="	https://product.hstatic.net/1000324420/product/upload_2929d6cbc6a94b8f8b6cd1b158c426ad_medium.jpg" title="Hành tây" class="container__select-box-list-item-img">
+                                        <p class="container__select-box-list-item-describe">Hành tây</p>
+                                        <div class="flex b-center ">
+                                            <p class="container__select-box-list-item-prepare">50,000</p>
+                                            <p class="container__select-box-list-item-init"><u>đ</u></p>
+                                        </div>
+                                        <div class="container__select-cart">
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-cart-plus "></i>
+                                            </button>
+                                            <button class="btn-container__select-cart-add">
+                                                <i class="fa-solid fa-eye "></i>
+                                            </button>
+                                        </div>
+                                    </div>  
+                                </div>
                             </div>
                         </div>
-                </div>
-
-                <div class="content_trangsanpham-right">
-                    <div class="content_trangsanpham-title"></div>
-                    <div class="content_trangsanpham-arrange"></div>
+                        <div class=" flex content_trangsanpham-right-btnnextpage">
+                            <button class="btn_page1">
+                                1
+                            </button>
+                            <button class="btn_page2">
+                                2
+                            </button>
+                            <button class="btn_pages">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>                                
+                        </div>
+                    </div>
                 </div>
             </div>
 

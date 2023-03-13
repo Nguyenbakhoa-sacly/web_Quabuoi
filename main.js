@@ -84,11 +84,11 @@ window.addEventListener('load', function(){
    
     btn_transfer_right.addEventListener('click', () =>{
         handleProductslv1(1);
-        handleProductslv2(1);
+       
     });
     btn_transfer_left.addEventListener('click', () =>{
         handleProductslv1(-1);
-        handleProductslv2(-1);
+       
     });
 
     function handleProductslv1(e){
@@ -172,6 +172,23 @@ tabs2.forEach((tab2,index2) =>{
         //hien thi noi dung item box
         this.classList.add('active2');
         pane2.classList.add('active2');
+    }
+})
+
+
+const menu__left_item= $$('.menu__left-item');
+console.log(menu__left_item);
+const tab_page = $$('.tab_page');
+
+menu__left_item.forEach((tab, index) => {
+    const page = tab_page[index];
+
+    tab.onclick = function() {
+        $('.menu__left-item.next_page').classList.remove('next_page');
+        $('.tab_page.next_page').classList.remove('next_page');
+
+        this.classList.add('next_page');
+        page.classList.add('next_page');
     }
 })
 

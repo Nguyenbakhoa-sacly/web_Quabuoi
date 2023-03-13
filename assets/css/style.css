@@ -394,8 +394,6 @@ khi khong co san pham nao
 .menu__left-item:hover .mega__content {
   display: block;
 
-
-
 }
 .menu__left-item-lv3{
   width: 230px;
@@ -553,9 +551,7 @@ list-style: none;
   margin-right: auto;
 
 }
-.content_trangchu{
-  display: none;
-}
+
 .container{
   max-width: 100%;
 
@@ -1250,9 +1246,7 @@ position: relative;
   color: #9e9c9c;
   
 }
-.content_trangsanpham{
-  display: flex;
-}
+
 .content_trangsanpham-left{
   width:25%;
 }
@@ -1551,9 +1545,140 @@ display: none;
 
 }
 
+.content_trangsanpham{
+  display: none;
+  /* display: flex; */
+
+}
+.content_trangchu{
+  display: none;
+}
+
+
+.tab_page.next_page{
+  display: block;
+
+}
+
+.menu__left-item.next_page{
+  background-color: var(--hurry-color);
+}
+
+/* ben phai trang san pham */
 
 .content_trangsanpham-right{
   width:75%;
-  background-color: var(--hurry-color);
-  height: 500px;
+  margin-top: 30px;
+  margin-left: 30px;
+
+}
+.content_trangsanpham-header{
+  border-bottom: 1px solid #ebebeb;
+  line-height: 24px;
+}
+.content_trangsanpham-header-text{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.content_trangsanpham-header-title p{
+  font-size:32px;
+  font-weight: 400;
+  padding-top: 4px;
+  color: var(--text);
+}
+
+
+.content_trangsanpham-header-select-arrange p{
+  font-size: 14px;
+  margin-right: 6px;
+  margin-bottom: 0;
+  font-weight: 400;
+  color: var(--text);
+  padding-top:6px ;
+}
+
+.content_trangsanpham-select_menu-list{
+  padding: 0;
+  width: 180px;
+  height:auto;
+  border: 1px solid #ebebeb;
+  right: 158px;
+  position: absolute;
+  background-color: var(--white-color);
+  box-shadow: 0 0 15px -5px rgb(0 0 0 / 40%);
+  top :338px;
+  z-index: 100;
+  animation: identifier 0.5s ease;
+  display: none; 
+
+}
+
+
+.content_trangsanpham-select_menu-list li{
+  list-style: none;
+
+}
+.content_trangsanpham-select_menu-list-item{
+  border-bottom: 1px solid #ebebeb;
+  padding: 6px 0 6px 12px ;
+  font-size: 14px;
+  color: #333;
+  /* display: block; */
+}
+.content_trangsanpham-select_menu-list-item i{
+  padding: 0 4px;
+}
+.content_trangsanpham-select_menu-list-item:hover{
+  background-color: rgb(251, 249, 249);
+  color: #337ab7;
+  transition: 0.4;
+
+}
+.content_trangsanpham-header-select-list{
+  border: 1px solid #ebebeb;
+  border-radius: 20px;
+  width: 180px;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.content_trangsanpham-header-select-arrange:hover .content_trangsanpham-select_menu-list{
+  display: block;
+}
+.content_trangsanpham-header-select-list p{
+  text-align: center;
+  padding: 6px 0 6px 10px;
+}
+.content_trangsanpham-header-select-list i{
+  text-align: center;
+  font-size: 12px;
+  padding:12px 16px 12px 0;
+}
+.content_trangsanpham-product{
+  margin-top: 24px;
+}
+.content_trangsanpham-right-btnnextpage{
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.content_trangsanpham-right-btnnextpage button{
+  margin-right: 10px;
+ background-color: var(--white-color);
+  border: 1px solid var(--green-color);
+  border-radius: 6px;
+  width: 33px;
+  height: 33px;
+  color:rgb(0, 0, 0);
+
+}
+.content_trangsanpham-right-btnnextpage button:hover{
+  background-color: var(--green-color);
+  color: var(--white-color);
+  transition:0.4s;
+
+}
+.content_trangsanpham-right-btnnextpage .btn_page1{
+  background-color: var(--green-color);
+  color: rgb(255, 255, 255);
 }

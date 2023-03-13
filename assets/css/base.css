@@ -37,6 +37,7 @@ html{
   
     }
 }
+
 @keyframes Animenu {
     0%{
         opacity: 0;
@@ -45,6 +46,17 @@ html{
     100%{
         opacity: 1;
         top: 51px;
+
+    }
+}
+@keyframes identifier {
+    0%{
+        opacity: 0;
+        top: 420px;
+    }
+    100%{
+        opacity: 1;
+        top: 338px;
 
     }
 }
@@ -80,9 +92,7 @@ html{
     justify-content: center;
     
 }
-.active{
-    background-color: var(--hurry-color);
-}
+
 .hover:hover{
     color: var(--green-color);
 }
