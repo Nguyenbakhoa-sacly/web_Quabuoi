@@ -177,11 +177,11 @@ tabs2.forEach((tab2,index2) =>{
 
 
 const menu__left_item= $$('.menu__left-item');
-console.log(menu__left_item);
 const tab_page = $$('.tab_page');
 
 menu__left_item.forEach((tab, index) => {
     const page = tab_page[index];
+    
 
     tab.onclick = function() {
         $('.menu__left-item.next_page').classList.remove('next_page');
@@ -189,8 +189,27 @@ menu__left_item.forEach((tab, index) => {
 
         this.classList.add('next_page');
         page.classList.add('next_page');
+        
     }
 })
+
+
+// menu doc trang san pham
+
+// const icon_menu= $$('#nav__category-menu-item-icondow');
+// const nav__category_menu_homepage_ul_lv2= $$('.nav__category-menu-homepage_ul_lv2');
+
+// icon_menu.forEach((tab, index) =>{
+//    const tab_menu = nav__category_menu_homepage_ul_lv2[index];
+
+//    tab.onclick= function(){
+
+//     tab_menu.classList.add('action')
+//     $('.nav__category-menu-homepage_ul_lv2.action').classList.remove('action');
+    
+//    }
+   
+// })
 
 
 
@@ -209,3 +228,6 @@ const scrollToTop = () => {
     });
 };
 document.addEventListener('scroll', onScroll);
+
+
+
