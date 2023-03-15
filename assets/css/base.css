@@ -25,6 +25,21 @@ html{
     font-family:  Arial, "Helvetica Neue", Helvetica, sans-serif;;
     box-sizing: border-box;
 }
+
+.content_trangsanpham{
+    display: none;
+/* display: flex; */
+
+}
+.content_trangchu{
+    display: none;
+}
+.content_trangtintuc{
+    display:none;
+}
+.content_gioithieu{
+    display: none;
+}
 @keyframes fadein {
     0% {
       top:90px;
@@ -119,4 +134,19 @@ html{
 }
 .action{
     display: block;
+}
+
+.Promotion{
+    background-color: var(--hurry-color);
+    width: 60px;
+    position: absolute;
+    top:8%;
+}
+
+.Promotion p{
+    color: rgb(255, 255, 255);
+    align-items: center;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 14px;
 }

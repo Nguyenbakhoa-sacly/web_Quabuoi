@@ -71,9 +71,10 @@ window.addEventListener('load', function(){
     const btn_transfer_left = document.querySelector('.btn-transfer-left');
     const btn_transfer_right = document.querySelector('.btn-transfer-right');
     const product_select_box = document.querySelector('.product-select-box-lv1');
-    const product_select_lv1 = document.querySelectorAll('.product-select_lv1');
+    const product_select_lv1 = document.querySelectorAll('#product-select_lv1');
     const slider_item_width_lv1 = product_select_lv1[0].offsetWidth + 24;
     const slidersLength1 = product_select_lv1.length;
+    console.log(slidersLength1)
 // console.log(slider_item_width_lv1)
   
     let positionX = 0;
@@ -182,7 +183,6 @@ const tab_page = $$('.tab_page');
 menu__left_item.forEach((tab, index) => {
     const page = tab_page[index];
     
-
     tab.onclick = function() {
         $('.menu__left-item.next_page').classList.remove('next_page');
         $('.tab_page.next_page').classList.remove('next_page');
