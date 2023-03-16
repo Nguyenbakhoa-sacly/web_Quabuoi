@@ -37,7 +37,7 @@ html{
 .content_trangtintuc{
     display:none;
 }
-.content_gioithieu{
+.content_hethongcuahang{
     display: none;
 }
 @keyframes fadein {
@@ -64,6 +64,7 @@ html{
 
     }
 }
+
 @keyframes identifier {
     0%{
         opacity: 0;
@@ -71,7 +72,7 @@ html{
     }
     100%{
         opacity: 1;
-        top: 338px;
+        top: 357px;
 
     }
 }
@@ -105,7 +106,9 @@ html{
 }
 .b-center{
     justify-content: center;
-    
+}
+.c_space-between{
+    justify-content: space-between;
 }
 
 .hover:hover{

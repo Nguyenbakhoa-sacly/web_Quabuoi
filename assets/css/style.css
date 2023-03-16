@@ -1333,15 +1333,15 @@ position: relative;
 }
 .product_color-checkbox{
   display: flex;
-  margin: 24px 0;
-
+  margin: 24px 20px 24px 0;
+ 
 }
 .product_color-checkbox .product_color-checkboxItem{
  width: 20px;
  height: 20px;
  padding: 0px;
- margin-left: 26px;
-cursor: pointer;
+ margin-left: 24px;
+  cursor: pointer;
 
 }
 .product_color-checkbox .product_color-checkboxItem:hover{
@@ -1620,7 +1620,7 @@ display: none;
 .content_trangsanpham-header-select-arrange p{
   font-size: 14px;
   margin-right: 6px;
-  margin-bottom: 0;
+
   font-weight: 400;
   color: var(--text);
   padding-top:6px ;
@@ -1631,11 +1631,11 @@ display: none;
   width: 180px;
   height:auto;
   border: 1px solid #ebebeb;
-  right: 158px;
+  right: 154px;
   position: absolute;
   background-color: var(--white-color);
   box-shadow: 0 0 15px -5px rgb(0 0 0 / 40%);
-  top :338px;
+  top :357px;
   z-index: 100;
   animation: identifier 0.5s ease;
   display: none; 
@@ -1826,4 +1826,130 @@ display: none;
     margin-top: 40px;
     margin-bottom: 40px;
 
+}
+
+
+
+/* trang he thong cua hang */
+.content_cuahang-left{
+ width:40%;
+}
+.content_cuahang-right{
+  width:60%;
+  margin-bottom: 30px;
+}
+.form_select{
+  background-color: var(--green-color);
+  width:100%;
+  border-radius: 3px;
+  padding: 26px 20px 6px 20px;
+}
+.form_select h3{
+  color: var(--white-color);
+  font-size: 16px;
+  padding-bottom: 16px;
+}
+.form_select_cuahang{
+  width: 100%;
+  height:40px;
+  position: relative;
+  display: flex;
+  margin-bottom: 20px;
+}
+.form_select_cuahang select {
+  border: none;
+  appearance: none;
+  padding:10px;
+  width: 100%;
+  color: var(--text);
+  background-color: var(--white-color);
+  font-size:15px;
+  border-radius: 3px;
+}
+.form_select_cuahang .icon_form_select{
+    width:50px;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    right: 0;
+    align-items: center;
+    justify-content:center;
+}
+.icon_form_select i{
+ font-size: 22px;
+ color: #a5a4a4;
+}
+.cuahang-right-list{
+  border: 2px solid var(--green-color);
+  border-radius: 4px;
+  margin-top:30px;
+  margin-left: 30px;
+}
+.cuahang-right-list-item {
+  border-bottom: 1px solid #ebebeb;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  padding:20px;
+
+}
+.cuahang-right-list-item:hover{
+  background-color: rgb(239, 234, 234);
+  transition: 0.4s;
+}
+.list_cuahang{
+  /* margin:20px; */
+}
+.cuahang-name{
+  color: var(--green-color);
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.cuahang-address{
+  display: flex;
+  line-height: 24px;
+}
+.cuahang-address b{
+ padding-right: 3px;
+ color: var(--text);
+
+}
+.cuahang-address p{
+  color: var(--text);
+  font-size:15px;
+
+  
+ }
+.cuahang_bottom_element{
+display: flex;
+justify-content: space-between;
+
+
+}
+.cuahang-info{
+  line-height: 28px;
+}
+.cuahang-info p {
+  color: var(--text);
+  font-size:15px;
+}
+.btn_map_toggle{
+  align-items: center;
+  display: flex;
+  height: 60px;
+  justify-content:center;
+}
+.btn_map_toggle button{
+  align-items: center;
+  color:var(--white-color);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  transition: 0.3s;
+  background-color: var(--green-color);
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn_map_toggle button:hover {
+  box-shadow: 0 0 0 5px rgb(144, 254, 1);
 }
