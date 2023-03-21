@@ -52,6 +52,7 @@ window.addEventListener('load', function(){
         else if(direction === -1){
             if(index <= 0){
                 index = 0;
+                
                 return;
             }
             positionX = positionX + slider_item_width;
