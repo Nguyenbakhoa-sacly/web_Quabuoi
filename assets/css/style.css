@@ -579,7 +579,7 @@ list-style: none;
 
 }
 .nav__category-menu-list{
-  padding: 0 15px;
+  padding-left:20px;
   list-style: none;
 }
 /* .nav__category-menu-list li:nth-child(1){
@@ -592,6 +592,7 @@ list-style: none;
   white-space: nowrap;
   text-overflow: ellipsis;
   border-top:1px solid #e7e5e5;
+  margin-right: 15px;
 }
 .nav__category-menu-item:hover i {
   color: var(--green-color);
@@ -646,6 +647,24 @@ list-style: none;
   display: block;
 
 }
+.scroll_menuTrangchu{
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-right: 20px;
+  height:390px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+}
+.scroll_menuTrangchu::-webkit-scrollbar{
+  width: 6px;
+  background-color: #F5F5F5;
+}
+.scroll_menuTrangchu::-webkit-scrollbar-thumb{
+  background-color:var(--hurry-color);
+}
+
+
 /* slide img */
 .container-right{
   width: 70%;
@@ -759,14 +778,12 @@ list-style: none;
   overflow: hidden;
   position: relative;
 
-
 }
 .container__select-box-list{
   display: flex;
   margin-bottom: 30px;
   /* justify-content: space-between; */
   transition: transform .25s linear;
-
 
 }
 
@@ -782,6 +799,7 @@ list-style: none;
   min-width: 280px; */
   position: relative;
   margin-right: 24.6px;
+
 }
 
 .container__select-box-list-item:last-child{
@@ -1631,7 +1649,7 @@ display: none;
   width: 180px;
   height:auto;
   border: 1px solid #ebebeb;
-  right: 154px;
+  right: 150px;
   position: absolute;
   background-color: var(--white-color);
   box-shadow: 0 0 15px -5px rgb(0 0 0 / 40%);
@@ -1952,4 +1970,71 @@ justify-content: space-between;
 }
 .btn_map_toggle button:hover {
   box-shadow: 0 0 0 5px rgb(144, 254, 1);
+}
+
+/* chinh sach giao hang */
+.chinhsachgiaohang_header_title h2{
+  font-size:28px;
+  color: var(--text);
+  margin-top: 20px;
+}
+.chinhsachgiaohang_title_table h3{ 
+  font-size: 18px;
+  color: var(--text);
+  padding-top:20px;
+  padding-bottom: 10px;
+}
+.chinhsachgiaohang_table_chinhsach table, th, td{
+ border: 2px solid #ebebeb;
+ border-collapse: collapse;
+ 
+}
+.chinhsachgiaohang_table_chinhsach table tr th{
+  padding:8px;
+  color: var(--text);
+ }
+ .chinhsachgiaohang_table_chinhsach table tr td{
+  padding:8px;
+  text-align:center;
+ }
+ .chinhsachgiaohang_table_chinhsach p i{
+  color: var(--text);
+  margin-top: 16px;
+  display: inline-block;
+ }
+.chinhsachgiaohang_list{
+  margin-bottom: 20px;
+ }
+ .chinhsachgiaohang_list-item{
+  padding: 0;
+
+ }
+ .chinhsachgiaohang_list-item li{
+  list-style: none;
+  line-height: 30px;
+  font-size: 15px;
+ }
+
+
+ /*trang chinh sach doi tra */
+
+.chinhsachdoitra_header_title{
+  margin-bottom: 20px;
+  color: var(--text);
+}
+.chinhsachdoitra_preamble{
+  line-height: 24px;
+  margin-bottom: 20px;
+  color: var(--text);
+}
+.chinhsachdoitra_list{
+  margin-bottom: 30px;
+}
+.chinhsachdoitra_list-item{
+  padding:0;
+  color: var(--text);
+}
+.chinhsachdoitra_list-item li{
+  list-style: none;
+  line-height: 24px;
 }

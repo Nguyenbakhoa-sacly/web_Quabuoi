@@ -40,6 +40,12 @@ html{
 .content_hethongcuahang{
     display: none;
 }
+.content_chinhsachgiaohang{
+    display: none;
+}
+.content_chinhsachdoitra{
+    display:none;
+}
 @keyframes fadein {
     0% {
       top:90px;

@@ -192,6 +192,7 @@ menu__left_item.forEach((tab, index) => {
         
     }
 })
+// menu doc trang chu
 
 
 // menu doc trang san pham
@@ -207,9 +208,11 @@ menu__left_item.forEach((tab, index) => {
 //     tab_menu.classList.add('action')
 //     $('.nav__category-menu-homepage_ul_lv2.action').classList.remove('action');
     
+//     tab_menu.classList.add('action')
 //    }
    
 // })
+
 
 
 
