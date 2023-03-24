@@ -75,7 +75,6 @@ window.addEventListener('load', function(){
     const product_select_lv1 = document.querySelectorAll('#product-select_lv1');
     const slider_item_width_lv1 = product_select_lv1[0].offsetWidth + 24;
     const slidersLength1 = product_select_lv1.length;
-    console.log(slidersLength1)
 // console.log(slider_item_width_lv1)
   
     let positionX = 0;
