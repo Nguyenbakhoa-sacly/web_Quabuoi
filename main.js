@@ -68,53 +68,53 @@ window.addEventListener('load', function(){
 
 // 
 
-window.addEventListener('load', function(){
-    const btn_transfer_left = document.querySelector('.btn-transfer-left');
-    const btn_transfer_right = document.querySelector('.btn-transfer-right');
-    const product_select_box = document.querySelector('.product-select-box-lv1');
-    const product_select_lv1 = document.querySelectorAll('#product-select_lv1');
-    const slider_item_width_lv1 = product_select_lv1[0].offsetWidth + 24;
-    const slidersLength1 = product_select_lv1.length;
-// console.log(slider_item_width_lv1)
+// window.addEventListener('load', function(){
+//     const btn_transfer_left = document.querySelector('.btn-transfer-left');
+//     const btn_transfer_right = document.querySelector('.btn-transfer-right');
+//     const product_select_box = document.querySelector('.product-select-box-lv1');
+//     const product_select_lv1 = document.querySelectorAll('#product-select_lv1');
+//     const slider_item_width_lv1 = product_select_lv1[0].offsetWidth + 24;
+//     const slidersLength1 = product_select_lv1.length;
+// // console.log(slider_item_width_lv1)
   
-    let positionX = 0;
-    let index = 0;
-    // let px = 24;
-    // console.log(slidersLength1)
-    // const width_img= slider_item_width + px;
+//     let positionX = 0;
+//     let index = 0;
+//     // let px = 24;
+//     // console.log(slidersLength1)
+//     // const width_img= slider_item_width + px;
    
-    btn_transfer_right.addEventListener('click', () =>{
-        handleProductslv1(1);
+//     btn_transfer_right.addEventListener('click', () =>{
+//         handleProductslv1(1);
        
-    });
-    btn_transfer_left.addEventListener('click', () =>{
-        handleProductslv1(-1);
+//     });
+//     btn_transfer_left.addEventListener('click', () =>{
+//         handleProductslv1(-1);
        
-    });
+//     });
 
-    function handleProductslv1(e){
-        if(e === 1){
-            if(index >= slidersLength1 - 4){
-                // index = slidersLength1 - 1;
-                return;
-            }
-            positionX = positionX - slider_item_width_lv1 ;
-            product_select_box.style = `transform : translateX(${positionX}px)`
-            index++;
+//     function handleProductslv1(e){
+//         if(e === 1){
+//             if(index >= slidersLength1 - 4){
+//                 // index = slidersLength1 - 1;
+//                 return;
+//             }
+//             positionX = positionX - slider_item_width_lv1 ;
+//             product_select_box.style = `transform : translateX(${positionX}px)`
+//             index++;
 
-        }else if(e === -1){
-            if(index <= 0){
-                index = 0;
-                return;
-            }
-            positionX = positionX + slider_item_width_lv1;
-            product_select_box.style = `transform : translateX(${positionX}px)`
-            index--;
-        }
-    }
+//         }else if(e === -1){
+//             if(index <= 0){
+//                 index = 0;
+//                 return;
+//             }
+//             positionX = positionX + slider_item_width_lv1;
+//             product_select_box.style = `transform : translateX(${positionX}px)`
+//             index--;
+//         }
+//     }
 
     
-});
+// });
 
 
 
@@ -176,22 +176,72 @@ tabs2.forEach((tab2,index2) =>{
     }
 })
 
+// trang con cua trang san pham 
+const btn_page_sanpham = $$(".btn_page_sanpham");
+const next_page_child_sanpham = $$(".next_page_child_sanpham");
 
-const menu__left_item= $$('.menu__left-item');
+btn_page_sanpham.forEach((tab,index)=>{
+    const next_page =next_page_child_sanpham[index];
+   
+    tab.onclick = function(){
+        $('.next_page_child_sanpham.action').classList.remove('action')
+        $('.btn_page_sanpham.action').classList.remove('action')
+
+        this.classList.add('action')
+        next_page.classList.add('action')
+    }
+})
+
+// tab trang chi tiet san pham
+const btn_tab_link = $$('.btn_tab-link');
+const tab_link_content = $$('.tab_link-content');
+btn_tab_link.forEach((tab, index)=>{
+    const tablink = tab_link_content[index]
+    tab.onclick = function(){
+
+        $('.btn_tab-link.current').classList.remove('current');
+        $('.tab_link-content.current').classList.remove('current');
+
+        this.classList.add('current');
+        tablink.classList.add('current');
+
+    }
+})
+
+
+
+
+
+//menu ngang
+const menu_ngang= $$('.menu_ngang');
 const tab_page = $$('.tab_page');
 
-menu__left_item.forEach((tab, index) => {
+menu_ngang.forEach((tab, index) => {
     const page = tab_page[index];
-    
+
+    console.log(index)
     tab.onclick = function() {
-        $('.menu__left-item.next_page').classList.remove('next_page');
         $('.tab_page.next_page').classList.remove('next_page');
+        $('.menu_ngang.next_page').classList.remove('next_page');
 
         this.classList.add('next_page');
         page.classList.add('next_page');
-        
     }
 })
+
+// product_select_lv1 .forEach((tab1,index)=>{
+
+//     tab1.onclick = function(){
+//         $('.tab_page.next_page').classList.remove('next_page');
+//         product_description.classList.add('action')
+//     }
+
+// })
+
+
+
+
+
 // menu doc trang chu
 
 
@@ -200,26 +250,11 @@ menu__left_item.forEach((tab, index) => {
 // const icon_menu= $$('#nav__category-menu-item-icondow');
 // const nav__category_menu_homepage_ul_lv2= $$('.nav__category-menu-homepage_ul_lv2');
 
-// icon_menu.forEach((tab, index) =>{
-//    const tab_menu = nav__category_menu_homepage_ul_lv2[index];
-
-//    tab.onclick= function(){
-
-//     tab_menu.classList.add('action')
-//     $('.nav__category-menu-homepage_ul_lv2.action').classList.remove('action');
-    
-//     tab_menu.classList.add('action')
-//    }
-   
-// })
-
-
-
 
 
 //cuon trang len vi tri dau
 
-const scrollTopButton=document.querySelector('#scroll_top-button');
+const scrollTopButton=$('#scroll_top-button');
 const onScroll = (e) => {
     const scrollPosition = e.target.scrollingElement.scrollTop;
     scrollTopButton.classList.toggle('visible', scrollPosition > 0);
@@ -232,5 +267,8 @@ const scrollToTop = () => {
 };
 document.addEventListener('scroll', onScroll);
 
+
+
+//xu ly phan xem mo ta san pham
 
 
