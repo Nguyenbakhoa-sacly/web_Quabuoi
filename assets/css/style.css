@@ -136,6 +136,7 @@ khi khong co san pham nao
   width: 300px;
   height:260px;
   margin-top: 15px;
+  /* display: none; */
 
 }
 .scroll_bar::-webkit-scrollbar{
@@ -152,8 +153,9 @@ khi khong co san pham nao
     line-height: 54px;
     font-weight:200;
     color: #363636;
-    display: none;
+    
 }
+
 .header__cart .fa-solid {
     line-height: 36px;
     padding-right: 8px;
@@ -552,7 +554,6 @@ list-style: none;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
-
 }
 
 .container{

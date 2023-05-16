@@ -131,7 +131,7 @@ tabs.forEach((tab,index) =>{
 
     tab.onclick =function(){
         // click vao menu
-        console.log(item_panes)
+
         $('.container__select-title-list-item.active').classList.remove('active');
         $('.tab_pane.active').classList.remove('active');
 
@@ -219,7 +219,6 @@ const tab_page = $$('.tab_page');
 menu_ngang.forEach((tab, index) => {
     const page = tab_page[index];
 
-    console.log(index)
     tab.onclick = function() {
         $('.tab_page.next_page').classList.remove('next_page');
         $('.menu_ngang.next_page').classList.remove('next_page');
