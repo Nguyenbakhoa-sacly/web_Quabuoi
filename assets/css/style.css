@@ -219,7 +219,7 @@ khi khong co san pham nao
   cursor: pointer;
 }
 .header__cart-list-select-input{
-  width: 24px;
+  width: 50px;
   border: 1px solid #ebebeb;
   background-color: var(--white-color);
   color: #363636;
