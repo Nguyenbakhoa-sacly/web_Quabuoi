@@ -49,6 +49,9 @@ html{
 .product_description{
     display: none;
 }
+.page_cart_product{
+    display: none;
+}
 
 @keyframes fadein {
     0% {
@@ -170,3 +173,4 @@ html{
 .display-none{
     display: none;
 }
+

@@ -2214,17 +2214,18 @@
                                 </div>
                                 <div class="product_price-slideValue">
                                     <div class="product_price-slideValue-input">
-                                        <input type="range" min="0" max="200" value="100" step="1">
+                                        <input class="range" type="range" min="10000" max="1000000" value="10000" onmousemove="rangeSlider(this.value)" >
                                     </div>
         
                                 </div>
                                 <div class="product_price_slider">
                                     <div class="product_price_slider_star flex">
-                                        <p class="product_price_slider_min">0</p>
+                                        <p class="product_price_slide
+                                        r_min">10000</p>
                                         <p class="product_price_slider-unit"><u>đ</u></p>
                                     </div>
                                     <div class="product_price_slider_stop flex">
-                                        <p class="product_price_slider_max">10,000,000</p>
+                                        <p class="product_price_slider_max">10000</p>
                                         <p class="product_price_slider-unit"><u>đ</u></p>
                                     </div>
     
@@ -4319,7 +4320,7 @@
             </div>
             <!-- action -->
             <!--Phần mổ tả sản phẩn   -->    
-            <div class="product_description  "> 
+            <div class="product_description"> 
                 <div class=" product_indexing">
                     <ul class=" product_indexing_list">
                         <li class=" product_indexing_list-item-home">
@@ -4784,6 +4785,64 @@
                     </div>
                 </div>
 
+            </div>
+
+            <!--Trang giỏ hàng -->
+            <div class="page_cart_product ">
+                <div class=" product_indexing">
+                    <ul class=" product_indexing_list">
+                        <li class=" product_indexing_list-item-home">
+                            <a href="#">
+                                <span>Trang Chủ</span>
+                            </a>
+                        </li>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <li class=" text_greencolor">
+                            <span>Giỏ hàng của bạn - BuoiXanh</span>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <div class="cart_headerTitle">
+                        <h4 style="width: 24%;">Sản phẩm</h4>
+                        <h4 style="width: 36%;">Thông tin sản phẩm</h4>
+                        <h4 style="width: 17%;">Số lượng</h4>
+                        <h4 style="width: 18%;">Đơn giá</h4>
+                        <h4 style="width: 5%;">Xóa</h4>
+                    </div>
+                    <div class="cart-table">
+                        <!-- <div class="cart_list">
+                            <div class="cart_list_item  cart_list_item-img" style="width: 24%;">
+                                <img src="https://product.hstatic.net/1000324420/product/upload_963fbe98fc324f47b37e38a3481c22e1_medium.jpg" alt="">
+                            </div>
+                            <div class="cart_list_item cart_list_item-name" style="width: 36%;">
+                                <p><a class="hover" href="">Dây đỏ Úc</a></p>
+                            </div>
+                            <div class="cart_list_item  text_bold" style="width: 17%;">
+                                <span class="cart_list_item-price">400.000</span>
+                                <span class="header__cart-list-item-text-unit" style="color: #333;"><u>đ</u></sapn>
+                            </div>
+                            <div class="cart_list_item cart_list_item-input" style="width: 18%;">
+                                <input class="cart_list_item-input" type="number" value="1" min="1">
+                            </div>
+                            <div class="cart_list_item" style="width: 5%;">
+                                <i class="delete_cart fa-solid fa-trash"></i>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="cart_total">
+                        <p>Tổng tiền:</p>
+                        <span class="cart_list_item-total">0</span>
+                        <span class="header__cart-list-item-text-unit" style="color: #333;"><u>đ</u></sapn>
+                    </div>
+                    <div class="btn_cart_pay">
+                        <p>
+                            Tiến hàng đặt hàng
+                        </p>
+                    </div>
+
+                </div>
             </div>
 
             <!-- Phần thanh toán -->

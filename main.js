@@ -268,6 +268,9 @@ document.addEventListener('scroll', onScroll);
 
 
 
-//xu ly phan xem mo ta san pham
+function rangeSlider(value){
+
+    document.querySelector('.product_price_slider_max').innerHTML = value
+}
 
 
